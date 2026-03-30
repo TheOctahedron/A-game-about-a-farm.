@@ -520,7 +520,7 @@ class game:
           for item, price in self.assortment.items():
             print(f"{item} - {price}$.")
 
-          print_slow("\nWHAT DO YOU WANT TO DO?: \n1. BUY SOMETHING.\n2. SELL SOMETHING.\n3. LEARN AN INTERESTING FACT. 4. LEAVE\n", 0.005)
+          print_slow("\nWHAT DO YOU WANT TO DO?: \n1. BUY SOMETHING.\n2. SELL SOMETHING.\n3. LEARN AN INTERESTING FACT. \n 4. LEAVE\n", 0.005)
           while True:
             try:
               question = input("\nINPUT: ").strip().capitalize()
@@ -962,14 +962,14 @@ class game:
               print_slow("\n1. CHICKEN COOP")
 
             if self.cowshed_built:
-              print_slow("\n1. COW SHED (PURCHASED)")
+              print_slow("\n2. COW SHED (PURCHASED)")
             else:
-              print_slow("\n1. COW SHED")
+              print_slow("\n2. COW SHED")
 
             if self.sheepfold_built:
-              print_slow("\n1. SHEEPFOLD (PURCHASED)")
+              print_slow("\n3. SHEEPFOLD (PURCHASED)")
             else:
-              print_slow("\n1. SHEEPFOLD")
+              print_slow("\n3. SHEEPFOLD")
 
             if self.sheepfold_built and self.cowshed_built and self.hencoop:
               print_slow("\nStop! You've purchased everything!\n")
