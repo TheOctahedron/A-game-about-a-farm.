@@ -1083,7 +1083,7 @@ class game:
                   input("Incorrect, enter the number of your action.\nPress Enter to try again.")
                   continue
 
-                    case "4":
+          case "4":
                       return
           
           case "2":
